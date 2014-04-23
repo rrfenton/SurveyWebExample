@@ -2,7 +2,7 @@ from mongoengine import *
 
 class Choice(EmbeddedDocument):
     choice_text = StringField(max_length=200)
-    votes = IntField(default=0)
+    value = IntField(default=0)
 
 class Poll(Document):
     question = StringField(max_length=200)
